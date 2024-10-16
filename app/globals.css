@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.force-sm {
+  @apply sm:block;
+}
+
+@screen sm {
+  .force-sm > * {
+    @apply sm:block;
+  }
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hamburger-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.line {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #000;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.line-1 {
+  top: 5%;
+}
+
+.line-2 {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  opacity: 0;
+}
+
+.line-3 {
+  bottom: 0;
+}
+
+.open .line-1 {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.open .line-2 {
+  opacity: 0;
+}
+
+.open .line-3 {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/* Persian Font Imports */
+@font-face {
+  font-family: 'BNazanin';
+  src:
+       url('./fonts/BNazanin.woff') format('woff');
+  font-weight: 24px;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('./fonts/Vazir-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sahel';
+  src: url('./fonts/Sahel.woff') format('woff');
+       
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SahelFD';
+  src: url('./fonts/Sahel-FD.woff') format('woff');
+       
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parastoo';
+  src: url('./fonts/Parastoo.woff') format('woff');
+       
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Samim';
+  src: url('./fonts/Samim.woff') format('woff');
+       
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tanha';
+  src: url('./fonts/Tanha.woff') format('woff');
+       
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Yekan';
+  src: url('./fonts/Yekan.woff') format('woff');
+       
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Existing CSS rules... */
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  font-family:  'Vazir', 'Sahel', 'BNazanin', 'SahelFD', 'Parastoo', 'Samim', 'Tanha', 'Yekan';
+}
