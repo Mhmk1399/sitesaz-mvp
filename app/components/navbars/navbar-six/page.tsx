@@ -155,4 +155,4 @@ const NavbarSix= ({ color, textColor , font,logo}: { color: string; textColor: s
   );
 };
 
-export default NavbarSix;
+export  {NavbarSix};

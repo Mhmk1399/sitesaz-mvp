@@ -151,4 +151,4 @@ const NavbarThree = ({
   );
 };
 
-export default NavbarThree;
+export { NavbarThree};
