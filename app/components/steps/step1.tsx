@@ -10,10 +10,10 @@ const Step1 = ({
     const navs = [
       { id: 1, name: "NavbarOne" },
       { id: 2, name: "NavbarTwo" },
-      { id: 3, name: "NavbarThree" },
+
       { id: 5, name: "NavbarFour" },
       { id: 6, name: "NavbarFive" },
-      { id: 7, name: "NavbarSix" },
+
     ];
     const footers = [
       { id: 1, name: "BigFooter" },
